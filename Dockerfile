@@ -20,6 +20,9 @@ RUN pip install --no-cache-dir --default-timeout=100 -r requirements.txt
 # This includes app.py, models/, and templates/
 COPY . .
 
+# Set environment port
+ENV PORT=5005
+
 # Expose port 5005 for the Flask application
 EXPOSE 5005
 
